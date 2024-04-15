@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'Christmas Tree',Georgia, serif;;
+    src: url('../font/ChristmasTree.woff2') format('woff2'),
+        url('../font/ChristmasTree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI',Georgia, serif;;
+    src: url('../font/SegoeUI-Light.woff2') format('woff2'),
+        url('../font/SegoeUI-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../font/SegoeUI.woff2') format('woff2'),
+    url('../font/SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Italic',Georgia, serif;;
+    src: url('../font/SegoeUI-Italic.woff2') format('woff2'),
+    url('../font/SegoeUI-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('../font/SegoeUI-Bold.woff2') format('woff2'),
+    url('../font/SegoeUI-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI BoldItalic',Georgia, serif;;
+    src: url('../font/SegoeUI-BoldItalic.woff2') format('woff2'),
+        url('../font/SegoeUI-BoldItalic.woff') format('woff');
+        font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI SegoeUIBlack',Georgia, serif;;
+    src: url('../font/SegoeUIBlack.woff2') format('woff2'),
+    url('../font/SegoeUIBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Historic',Georgia, serif;;
+    src: url('../font/SegoeUIHistoric.woff2') format('woff2'),
+        url('../font/SegoeUIHistoric.woff') format('woff');
+        font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI',Georgia, serif;;
+    src: url('../font/SegoeUI-LightItalic.woff2') format('woff2'),
+        url('../font/SegoeUI-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI',Georgia, serif;;
+    src: url('../font/SegoeUIBlack-Italic.woff2') format('woff2'),
+    url('../font/SegoeUIBlack-Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semilight',Georgia, serif;;
+    src: url('../font/SegoeUI-Semilight.woff2') format('woff2'),
+    url('../font/SegoeUI-Semilight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Emoji',Georgia, serif;;
+    src: url('../font/SegoeUIEmoji.woff2') format('woff2'),
+    url('../font/SegoeUIEmoji.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI',Georgia, serif;;
+    src: url('../font/SegoeUI-SemiboldItalic.woff2') format('woff2'),
+    url('../font/SegoeUI-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI',Georgia, serif;;
+    src: url('../font/SegoeUI-Semibold.woff2') format('woff2'),
+        url('../font/SegoeUI-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Semilight',Georgia, serif;;
+    src: url('../font/SegoeUI-SemilightItalic.woff2') format('woff2'),
+        url('../font/SegoeUI-SemilightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Symbol',Georgia, serif;;
+    src: url('../font/SegoeUISymbol.woff2') format('woff2'),
+    url('../font/SegoeUISymbol.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI Variable',Georgia, serif;;
+    src: url('../font/SegoeUIVariable.woff2') format('woff2'),
+    url('../font/SegoeUIVariable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    font-family: 'Segoe UI',Georgia, serif;;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --christmas-tree: 'Christmas Tree';
+    --segoe-regular:'Segoe UI',Georgia, serif;
+    --segoe-bold:'Segoe UI Bold',Georgia, serif;
+    --white-lg:#F9F9F9;
+    --orange-lg:#E3927C;
+    --grey: #707070;
+    --blue:#6D959E;
+    --yellow:#E6E2D3;
+    --radius: 35px;
+}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+img{display: block;max-width: 100%;}
+p{font-size: 17px;}
+.container-lg{max-width: 1637px;width: 90%;margin: 0 auto;}
+.container-md{max-width: 1449px;width: 90%;margin: 0 auto;}
+.container-sm{max-width: 1423px;width: 80%;margin: 0 auto;}
+.btn,a{text-decoration: none;color: inherit;border: none;background-color: inherit;cursor: pointer;}
+.text-center{text-align: center;}
+.sec-head{font-size: 47px;font-family: var(--christmas-tree);line-height: 1.3;}
+
+
+
+/* HEADER */
+.header{position: fixed;z-index: 9;padding: 20px 0;top: 0;width: 100%;}
+.header .right-box .btn,.sec-nutshell .button-box .btn{padding: 6px 28px;font-family: var(--christmas-tree);font-size: 36px;background-color: var(--orange-lg);line-height: 1;border: 1px solid var(--grey);border-radius: var(--radius);color: var(--white-lg);position: relative;z-index: 99;margin-right: 10px;}
+.header .box-wrapper{display: flex;align-items: center;justify-content: space-between;}
+.header .right-box .btn:after,.sec-nutshell .button-box .btn::after{content: "";height: 100%;width: 100%;position: absolute;bottom: -6px;left: 4px;z-index: -1;background-color: var(--grey);-webkit-border-radius: var(--radius);-moz-border-radius: var(--radius);border-radius: var(--radius);}
+.header .right-box .btn:active,.sec-nutshell .button-box .btn:active{top:8px;background-color:var(--grey);}
+
+
+
+
+/* FOOTER  */
+.footer{background-color: var(--blue);position: relative;margin-top: 50px;}
+.footer::before{content: "";background-image: url(../img/footer-pattern.png);display: block;height: 77px;width: 100%;position: absolute;top: -30px;left: 0;background-repeat: repeat-x;    background-repeat: repeat-x;background-size: 131px;background-position: left;}
+.footer .logo{margin-bottom: 20px;}
+.footer .box-wrapper p{color: var(--white-lg);margin-bottom: 7px;line-height: 1.3;}
+.footer .box-wrapper{display: flex;align-items: center;justify-content: space-between;}
+.footer .comp-info-box{margin-bottom: 20px;}
+.footer .left-box, .footer .right-box{flex-basis: 25%;}
+.footer .box-wrapper h3{margin-bottom: 10px;color: var(--yellow);font-family: var(--segoe-bold);font-size: 17px;}
+.footer .right-box{text-align: right;}
+.footer .copyright-txt{padding: 14px 0;color: var(--white-lg);border-top: 1px solid var(--white-lg);}
+.footer .social-icon-box .icon{display: inline-block;margin-right: 5px;}
+.footer a:hover{text-decoration: underline;}
+.footer .follow-us-box{display: flex;align-items: center;gap: 5px;justify-content: start;margin-bottom: 20px;}
+
+
+
+.hero-text-strip h2{background-color: var(--blue);color: var(--white-lg);font-family: var(--segoe-regular);font-size: 24px;line-height: normal;padding: 12px 0;}
+.hero-text-strip h1{background-color: var(--orange-lg);font-size: 69px;line-height: 1.3;font-family: var(--christmas-tree);color: var(--white-lg);}
+
+
+.sec-nutshell .nutshell-note-box h2{font-family: var(--christmas-tree);font-size: 47px;margin-bottom: 13px;color: #55879C;line-height: 1.2;}
+.sec-nutshell{background-color: var(--yellow);}
+.sec-nutshell .nutshell-note-box{padding: 0 25%;margin-bottom: 60px;}
+.sec-nutshell .nutshell-note-box p{color: #4C6572;font-size: 24px;font-family: var(--segoe-regular);line-height: 1.2;}
+.nutshell-info{background-color: var(--blue);border-radius: var(--radius);padding: 50px;padding-top: 131px;}
+.nutshell-img{margin-bottom: -101px;}
+.nutshell-img img{margin: 0 auto;}
+.nutshell-box h3{font-size: 24px;line-height: 1.2;color: var(--white-lg);margin-bottom: 15px;}
+.nutshell-box-wrap{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;gap: 26px;padding-bottom: 44px;}
+.nutshell-box p{line-height: 1.2;color: var(--white-lg);}
+.sec-nutshell .button-box{padding-bottom: 35px;}
+
+
+.sec-about .right-box h2{font-size: 47px;line-height: 1.2;font-family: var(--christmas-tree);color: #55879C;margin-bottom: 22px;}
+.sec-about .right-box p{line-height: 1.2;color: #000000;margin-bottom: 10px;}
+.sec-about .box-wrapper{display: grid;grid-template-columns: 1.1fr .9fr;gap: 74px;align-items: center;}
+.sec-about{padding: 50px 0;}
+
+.sec-standout .sec-head{color: #55879C;margin-bottom: 60px;}
+.sec-standout{background-color: var(--yellow);}
+.sec-standout .counter-text{color: #7CBA9F;font-size: 79px;line-height: 1.3;font-family: var(--segoe-bold);letter-spacing: normal;}
+.sec-standout .num-txt-info{color: #4C6572;font-size: 24px;font-family: var(--segoe-regular);}
+.sec-standout .num-box::after {
+    content: "";
+    display: inline-block;
+    background-color: var(--white-lg);
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    top: 45%;
+    left: -2%;
+    z-index: -1;
+}
+.sec-standout .box-wrapper{margin-bottom: 90px;}
+.sec-standout .num-box{    position: relative;z-index: 1;display: inline-block;text-align: left;width: calc(20% - 25px);padding-left: 20px;}
+.sec-standout .container-sm{max-width: 1358px;}
+.sec-standout{padding-top: 100px;padding-bottom: 40px;}
+/* .sec-standout .box-wrapper{t} */
