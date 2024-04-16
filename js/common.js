@@ -8,7 +8,7 @@ $(function () {
         centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
     });
 
@@ -25,9 +25,9 @@ $(function () {
         initialSlide: 1,
         arrows: false,
         focusOnSelect: false,
-        pauseOnHover:true,
+        pauseOnHover: true,
         buttons: false
-      });
+    });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 30) {
@@ -36,6 +36,10 @@ $(function () {
             $('.header').removeClass('active');
         }
     });
+
+
+
+
 
 
 });
@@ -51,10 +55,10 @@ $(function () {
 // }});
 
 // gsap.to("#instructorElement", { innerText: 10000, duration: 1, snap: {
-    //     innerText:5
-    // },
-    // modifiers: {
-        //     innerText: function (innerText) {
+//     innerText:5
+// },
+// modifiers: {
+//     innerText: function (innerText) {
 //         return gsap.utils
 //             .snap(increment, innerText)
 //             .toString()
@@ -101,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                         }
                     },
-                    
+
                 });
             }
         });
@@ -110,5 +114,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ScrollSmoother.create({
 //     content: ".page-wrapper",
-//     smooth: 2
+//     smooth: 1
 //   });
+$( ".close-btn" ).on( "click", function() {
+    $(".applynow-popup, .overlay").fadeOut()
+} );
+
+$( ".applynow-box" ).on( "click", function() {
+    $(".applynow-popup, .overlay").fadeIn()
+} );
+
+$(window).on('load', function () {
+    setTimeout(function () {
+        $(".applynow-popup, .overlay").fadeIn()
+    }, 1000)
+});

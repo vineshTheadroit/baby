@@ -2,7 +2,8 @@
     .nutshell-info{padding: 40px;    padding-top: 131px;}
     .sec-standout .feedback-box{padding: 50px 45px 40px;}
     .sec-standout .work-box-img{width: 145px;height: 145px;}
-    
+    .applynow-popup{    padding: 40px 30px;}
+    .applynow-popup label{font-size: 16px;}
 }/*1600*/
 
 @media screen and (max-width: 1500px){
@@ -30,7 +31,11 @@
     .sec-standout .num-box::after{width: 115px;height: 115px;}
     .sec-about::after{background-size: 100px;height: 44px; bottom: -5%;}
     .sec-standout .feedback-box{padding: 30px 40px 30px;}
-    
+    .applynow-popup .input-box input{height: 35px;}
+    .applynow-popup label {font-size: 15px;}
+    .applynow-popup .logo img {width: 150px;}
+    .sticky-box .applynow-box{    font-size: 38px;}
+    .sticky-box{transform: translate(42%, -100%) rotate(-90deg);}
     
 }/*1366*/
 
@@ -44,6 +49,8 @@
 
 
 @media screen and (max-width: 1279px){
+    p{font-size: 14px;}
+    /* .sec-standout .feedback-text {margin-bottom: 15px;margin: 0 20px;} */
     
     
 }/*1024*/
