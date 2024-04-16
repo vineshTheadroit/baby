@@ -188,7 +188,7 @@ p{font-size: 17px;}
 
 /* HEADER */
 .header{position: fixed;z-index: 9;padding: 20px 0;top: 0;width: 100%;}
-.header .right-box .btn,.sec-nutshell .button-box .btn{padding: 6px 28px;font-family: var(--christmas-tree);font-size: 36px;background-color: var(--orange-lg);line-height: 1;border: 1px solid var(--grey);border-radius: var(--radius);color: var(--white-lg);position: relative;z-index: 99;margin-right: 10px;}
+.header .right-box .btn,.sec-nutshell .button-box .btn, .join-section .form-sec-wrapper .form-box .btn{padding: 6px 28px;font-family: var(--christmas-tree);font-size: 36px;background-color: var(--orange-lg);line-height: 1;border: 1px solid var(--grey);border-radius: var(--radius);color: var(--white-lg);position: relative;z-index: 99;margin-right: 10px;}
 .header .box-wrapper{display: flex;align-items: center;justify-content: space-between;}
 .header .right-box .btn:after,.sec-nutshell .button-box .btn::after{content: "";height: 100%;width: 100%;position: absolute;bottom: -6px;left: 4px;z-index: -1;background-color: var(--grey);-webkit-border-radius: var(--radius);-moz-border-radius: var(--radius);border-radius: var(--radius);}
 .header .right-box .btn:active,.sec-nutshell .button-box .btn:active{top:8px;background-color:var(--grey);}
@@ -198,7 +198,7 @@ p{font-size: 17px;}
 
 /* FOOTER  */
 .footer{background-color: var(--blue);position: relative;margin-top: 50px;}
-.footer::before{content: "";background-image: url(../img/footer-pattern.png);display: block;height: 77px;width: 100%;position: absolute;top: -30px;left: 0;background-repeat: repeat-x;    background-repeat: repeat-x;background-size: 131px;background-position: left;}
+.footer::before{content: "";background-image: url(../img/footer-pattern.png);display: block;height: 77px;width: 100%;position: absolute;top: -30px;left: 0;background-repeat: repeat-x;background-repeat: repeat-x;background-size: 131px;background-position: left;}
 .footer .logo{margin-bottom: 20px;}
 .footer .box-wrapper p{color: var(--white-lg);margin-bottom: 7px;line-height: 1.3;}
 .footer .box-wrapper{display: flex;align-items: center;justify-content: space-between;}
@@ -252,7 +252,23 @@ p{font-size: 17px;}
     z-index: -1;
 }
 .sec-standout .box-wrapper{margin-bottom: 90px;}
-.sec-standout .num-box{    position: relative;z-index: 1;display: inline-block;text-align: left;width: calc(20% - 25px);padding-left: 20px;}
+.sec-standout .num-box{position: relative;z-index: 1;display: inline-block;text-align: left;width: calc(20% - 25px);padding-left: 20px;}
 .sec-standout .container-sm{max-width: 1358px;}
 .sec-standout{padding-top: 100px;padding-bottom: 40px;}
 /* .sec-standout .box-wrapper{t} */
+
+
+/* Join-section */
+.join-section{background-color: var(--yellow);padding: 33.5px 0 58.5px 0;}
+.join-section .container-sm{padding: 0 31px;}
+.join-section .sec-head{color: #55879C;text-align: center;}
+.join-section p{color:#4C6572; font-size: 24px;text-align: center;margin-top: 15px;}
+.join-section .form-sec-wrapper{display: flex;margin-top: 26.3px;padding: 52px 0;background-image: url(../img/contact-bg.png);background-repeat:no-repeat;background-size: cover;}
+.join-section .form-sec-wrapper .form-box{width: calc(100% - 41%);padding-left: 110px;padding-right: 36px;}
+.join-section .form-sec-wrapper .form-r-box{width: 41%;padding-right: 47px;}
+.join-section .form-sec-wrapper .form-box .input-box label{display: block;font-size: 17px;color: #4C6572;}
+.join-section .form-sec-wrapper .form-box .input-box{margin-top:10px;width: 100%;}
+.join-section .form-sec-wrapper .form-box .input-box input{background-color: #C3AD9A;border: 0;width: 100%;padding: 12px 10px;border-radius: 6px;margin-top: 3px;}
+.join-section .form-sec-wrapper .form-box .btn{padding: 6px 28px;font-family: var(--christmas-tree);font-size: 36px;background-color: var(--orange-lg);line-height: 1;border: 1px solid var(--grey);border-radius: var(--radius);color: var(--white-lg);position: relative;z-index: 99;margin-top:21px}
+.join-section .form-sec-wrapper .form-box .btn:after{content: "";height: 100%;width: 100%;position: absolute;bottom: -6px;left: 4px;z-index: -1;background-color: var(--grey);-webkit-border-radius: var(--radius);-moz-border-radius: var(--radius);border-radius: var(--radius);}
+.join-section .form-sec-wrapper .form-box .note-txt{font-size: 17px;text-align: left;color: #4C6572;line-height: 1.2;}
