@@ -229,7 +229,12 @@ body{background-color: var(--yellow);}
 .nutshell-box-wrap{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;gap: 26px;padding-bottom: 44px;}
 .nutshell-box p{line-height: 1.2;color: var(--white-lg);}
 .sec-nutshell .button-box{padding-bottom: 35px;}
-.sec-nutshell .flag-slider{display: flex;gap: 25px;justify-content: center;padding: 70px 0;}
+.sec-nutshell .flag-slider{display: flex;gap: 25px;justify-content: center;padding: 70px 0;    overflow: hidden;
+    position: relative;
+}
+
+.flag-img{margin: 0 14px;}
+
 
 
 .sec-about .right-box h2{font-size: 47px;line-height: 1.2;font-family: var(--christmas-tree);color: #55879C;margin-bottom: 22px;}
@@ -254,9 +259,12 @@ body{background-color: var(--yellow);}
     top: 45%;
     left: -2%;
     z-index: -1;
+    
 }
+
+.sec-standout .num-box:nth-child(5),.sec-standout .num-box:nth-child(4){width: calc(25% - 25px);}
 .sec-standout .box-wrapper{margin-bottom: 90px;}
-.sec-standout .num-box{    position: relative;z-index: 1;display: inline-block;text-align: left;width: calc(20% - 25px);padding-left: 20px;}
+.sec-standout .num-box{    position: relative;z-index: 1;display: inline-block;text-align: left;width: calc(17% - 15px);padding-left: 20px;}
 .sec-standout .container-sm{max-width: 1358px;}
 .sec-standout{padding-top: 100px;padding-bottom: 40px;}
 .sec-standout .feedback-box{background-color: #e5d1a8;border-radius: 100%;padding: 53px 50px 43px ;font-family: var(--segoe-regular);margin: 0 30px;transition: 500ms ease-in;}
@@ -295,3 +303,7 @@ body{background-color: var(--yellow);}
 .sec-apply .box-wrapper{display: grid;grid-template-columns: 1fr 1fr 1fr;gap: 25px;}
 .sec-apply::before{    content: "";display: inline-block;background-image: url(../img/sec-about-pattern.png);height: 58px;width: 100%;background-repeat: repeat;position: absolute;top: -7%;left: 0;transform: rotate(180deg);}
 .sec-apply::after{content: "";display: inline-block;background-image: url(../img/sec-apply-strip.png);width: 100%;height: 100px;background-repeat: repeat;position: absolute;bottom: -7%;left: 0;}
+
+/* @keyframes rotate {
+    
+} */
