@@ -222,7 +222,7 @@ body{background-color: var(--yellow);}
 .sec-nutshell{background-color: var(--yellow);    padding-bottom: 100px;}
 .sec-nutshell .nutshell-note-box{padding: 0 25%;margin-bottom: 60px;}
 .sec-nutshell .nutshell-note-box p{color: #4C6572;font-size: 24px;font-family: var(--segoe-regular);line-height: 1.2;}
-.nutshell-info{background-color: var(--blue);border-radius: var(--radius);padding: 50px;padding-top: 131px;}
+.nutshell-info{background-color: var(--blue);border-radius: var(--radius);padding: 50px 30px;padding-top: 131px;}
 .nutshell-img{margin-bottom: -101px;animation-name: rotateDiv;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -316,7 +316,7 @@ body{background-color: var(--yellow);}
 .join-section .container-sm{padding: 0 31px;}
 .join-section .sec-head{color: #55879C;text-align: center;}
 .join-section p{color:#4C6572; font-size: 24px;text-align: center;margin-top: 15px;}
-.join-section .form-sec-wrapper{display: flex;margin-top: 26.3px;padding: 52px 0;background-image: url(../img/contact-bg.png);background-repeat:no-repeat;background-size: cover;}
+.join-section .form-sec-wrapper{display: flex;margin-top: 26.3px;padding: 52px 0;background-image: url(../img/contact-bg.png);background-repeat:no-repeat;background-size: cover;border: 2px dashed #707070;border-radius: 30px;}
 .join-section .form-sec-wrapper .form-box{width: calc(100% - 41%);padding-left: 110px;padding-right: 36px;}
 .join-section .form-sec-wrapper .form-r-box{width: 41%;padding-right: 47px;}
 .join-section .form-sec-wrapper .form-box .input-box label{display: block;font-size: 17px;color: #4C6572;}

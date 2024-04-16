@@ -1,13 +1,19 @@
 @media screen and (max-width: 1700px){
-    .nutshell-info{padding: 40px;    padding-top: 131px;}
+    .nutshell-info{padding: 40px 12px;    padding-top: 131px;}
     .sec-standout .feedback-box{padding: 50px 45px 40px;}
     .sec-standout .work-box-img{width: 145px;height: 145px;}
+
+
+    .join-section .container-sm{padding:0}
     .applynow-popup{    padding: 40px 30px;}
     .applynow-popup label{font-size: 16px;}
 }/*1600*/
 
 @media screen and (max-width: 1500px){
-    
+    .join-section .form-sec-wrapper .form-box{padding-left:70px}
+
+    .join-section .form-sec-wrapper .form-r-box{padding-right:40px}
+    .join-section .form-sec-wrapper{padding:40px 0}
     
 }/* EXTRA IF REQUIRED*/
 
@@ -31,12 +37,9 @@
     .sec-standout .num-box::after{width: 115px;height: 115px;}
     .sec-about::after{background-size: 100px;height: 44px; bottom: -5%;}
     .sec-standout .feedback-box{padding: 30px 40px 30px;}
-    .applynow-popup .input-box input{height: 35px;}
-    .applynow-popup label {font-size: 15px;}
-    .applynow-popup .logo img {width: 150px;}
-    .sticky-box .applynow-box{    font-size: 38px;}
-    .sticky-box{transform: translate(42%, -100%) rotate(-90deg);}
-    .sec-apply .box-wrapper{padding: 0 2%;}
+    .sec-apply .box-wrapper{padding: 0;}
+
+
     
 }/*1366*/
 
@@ -45,7 +48,16 @@
     .nutshell-info {padding: 20px;padding-top: 125px;}
     .hero-text-strip h1 {font-size: 55px;}
     .sec-standout .work-box-txt, .sec-nutshell .nutshell-note-box p, .hero-text-strip h2 {font-size: 20px;}
-    
+    .join-section .form-sec-wrapper .form-box {
+        padding-left: 45px;
+    }
+    .join-section .form-sec-wrapper {
+        padding: 31px 0;
+    }
+    .join-section p{font-size:20px}
+    .join-section .form-sec-wrapper .form-box .input-box label{font-size:15px}
+    .join-section .form-sec-wrapper .form-box .note-txt{font-size: 15px}
+    .join-section .form-sec-wrapper .form-box .btn{font-size: 32px;}
 }/*1280*/
 
 
