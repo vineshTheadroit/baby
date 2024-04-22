@@ -10,6 +10,21 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     $('.flag-img-wrapper').slick({
@@ -35,6 +50,27 @@ $(function () {
         } else {
             $('.header').removeClass('active');
         }
+    });
+
+    $('.nutshell-box-wrap,.sec-apply .box-wrapper').slick({
+        dots: false,
+        infinite: false,
+        responsive: [
+            {
+                breakpoint: 9999,
+                settings: "unslick",
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
 
@@ -112,17 +148,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// ScrollSmoother.create({
-//     content: ".page-wrapper",
-//     smooth: 1
-//   });
-$( ".close-btn" ).on( "click", function() {
+$(".close-btn, .overlay").on("click", function () {
     $(".applynow-popup, .overlay").fadeOut()
-} );
+});
 
-$( ".applynow-box" ).on( "click", function() {
+$(".applynow-box").on("click", function () {
     $(".applynow-popup, .overlay").fadeIn()
-} );
+});
 
 $(window).on('load', function () {
     setTimeout(function () {
